@@ -7,7 +7,7 @@ import time
 class Library:
     book_list = {}
     # Bk = pd.read_csv("C:/Users/ACER/Downloads/jQuery/alexandra-bohemian-literature/alexandra-bohemian-literature/data/bohemian_literature.csv")
-    Bk=pd.read_csv("library/bohemian_literature.csv")
+    Bk=pd.read_csv("bohemian_literature.csv")
     Books = np.array(list(Bk.loc[Bk['title'].notnull(), "title"]))
     np.sort(Books)
     d = Counter(Books)
